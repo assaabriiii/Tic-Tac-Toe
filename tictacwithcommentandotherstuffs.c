@@ -32,8 +32,13 @@ int main()
 
     printf("\ndate and time : %s\n", ctime(&t)); //function which show the time and date
 
+    printf("exit : type '999'\n");
     printf("Play Game with Bot Or User ? (Bot => 1 & User => 2)  :  "); //choose which type of the game do you want
     scanf("%d",&status);
+    if(status == 999)
+    {
+        return 0;
+    }
 
     while (mainStatus == -1)
     {
